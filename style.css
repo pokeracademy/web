@@ -1,0 +1,322 @@
+html {
+  box-sizing: border-box;
+  font-family: 'lato';
+  padding-bottom: 500px;
+  position: relative;
+}
+@media screen and (min-width: 45em) {
+  html {
+    padding-bottom: 600px;
+  }
+}
+
+body {
+ margin: 0px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  color: #F4EFE7;
+  font-family: 'rock salt';
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F4EFE7;
+}
+
+img {
+  width: 100%;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.nav-bar {
+  position: relative;
+  background-color: #222;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 1em .5em .5em;
+}
+
+.logo {
+  width: 15%;
+  padding-left: 1em;
+}
+.logo svg {
+  width: 60%;
+  max-width: 150px;
+  min-width: 100px;
+  height: auto;
+}
+
+.hamburger {
+  width: 40px;
+  position: absolute;
+  top: 26%;
+  right: 3.5%;
+}
+@media screen and (min-width: 45em) {
+  .hamburger {
+    display: none;
+  }
+}
+.hamburger svg {
+  width: 100%;
+}
+
+.nav-list {
+  display: none;
+  width: 80%;
+}
+@media screen and (min-width: 45em) {
+  .nav-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.nav-list li {
+  width: 25%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+  padding-top: .95em;
+}
+.nav-list li a {
+  font-family: 'lato';
+  text-transform: uppercase;
+  font-size: .75em;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.nav-list li a:after {
+  display: block;
+  content: '';
+  padding-bottom: 5px;
+  border-bottom: solid 1px #F4EFE7;
+  -webkit-transform: scaleX(0.0001);
+      -ms-transform: scaleX(0.0001);
+          transform: scaleX(0.0001);
+  -webkit-transition: -webkit-transform 350ms ease-in-out;
+          transition: transform 350ms ease-in-out;
+}
+.nav-list li a:hover:after {
+  -webkit-transform: scaleX(0.6);
+      -ms-transform: scaleX(0.6);
+          transform: scaleX(0.6);
+}
+
+.poster {
+  margin: 0;
+  height: 500px;
+  background-image: url("http://www.solverde.pt/fotos/galerias/sht_61202320_1280x700_3859530034fc8a43ea74ad.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+.poster:after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-bottom: 20px solid #F3F5F5;
+  border-left: 30px solid transparent;
+  border-right: 20px solid transparent;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.poster-title {
+  font-size: 3.4em;
+  position: relative;
+  top: 40%;
+  padding: 1em .5em;
+  line-height: 1;
+}
+.poster-title span {
+  font-size: .4em;
+  font-family: 'lato';
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.quote {
+  padding: 2.25em;
+  background-image: url("http://www.satisfactoryfactory.com/wp-content/uploads/2014/05/bnw-blurred-background-texture-21.jpg") ;
+  background-size: 2000px 560px;
+}
+.quote p {
+  font-family: 'rock salt';
+  line-height: 1.3;
+  font-size: 1.95em;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  color: #A8A2A2;
+  letter-spacing: 2px;
+}
+.quote .author {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 2.15em;
+  letter-spacing: 2px;
+  padding-top: 0.5em;
+  color: #A8A2A2;
+}
+
+.quote .dan {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 2.15em;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #740514;
+}
+
+.about {
+  background-color: #fff;
+}
+.about img {
+  width: 100%;
+}
+@media screen and (min-width: 45em) {
+  .about img {
+    width: 50%;
+  }
+}
+.about .content {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  position: relative;
+}
+@media screen and (min-width: 45em) {
+  .about .content {
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 70em) {
+  .about .content {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 45em) {
+  .about .content {
+    width: 50%;
+  }
+}
+.about .content h2 {
+  color: #928E88;
+}
+.about .content p {
+  color: #222;
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1.125em;
+}
+@media screen and (min-width: 900px) {
+  .about .content p {
+    font-size: 1.4em;
+  }
+}
+
+.early-life {
+  position: relative;
+}
+.early-life img {
+  display: block;
+  float: left;
+}
+.early-life .content {
+  float: right;
+}
+
+.career {
+  position: relative;
+  clear: both;
+  background-color: #fff;
+}
+.career .content {
+  float: left;
+}
+.career img {
+  display: block;
+  float: right;
+}
+
+.the-thrill {
+  position: fixed;
+  bottom: 0;
+  z-index: -100;
+  width: 100%;
+  background-image: url("http://codepen.vincebrown.me/the-king/the-king-2.jpg");
+  background-position: top left;
+}
+@media screen and (min-width: 45em) {
+  .the-thrill {
+    height: 600px;
+  }
+}
+.the-thrill:after {
+  width: 0;
+  height: 0;
+  content: '';
+  border: none;
+}
+.the-thrill h1 {
+  text-align: right;
+  line-height: 1;
+  width: 90%;
+  font-size: 3.5em;
+  padding-top: 275px;
+  text-shadow: 2px 4px 3px #222;
+}
+.the-thrill .copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .5em 0;
+  background-color: #222;
+}
+.the-thrill .copyright p {
+  text-align: center;
+  color: #F4EFE7;
+  font-size: .75em;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
