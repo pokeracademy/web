@@ -283,7 +283,7 @@ img {
   bottom: 0;
   z-index: -100;
   width: 100%;
-  background-image: url("http://s.cheche.free.fr/Poker/CPT/Poker_wallpaper.jpg");
+  background-image: url("background.jpg");
   background-position: top left;
 }
 @media screen and (min-width: 45em) {
@@ -315,7 +315,7 @@ img {
 .the-thrill .copyright p {
   text-align: center;
   color: #F4EFE7;
-  font-size: .75em;
+  font-size: 1em;
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
